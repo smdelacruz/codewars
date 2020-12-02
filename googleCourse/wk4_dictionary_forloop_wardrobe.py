@@ -1,4 +1,4 @@
 wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
-for k,v in wardrobe.items():
-    for pp in v:
-        print("{} {}".format(pp, k))
+for clothes_type,colors in wardrobe.items():
+    for color in colors:
+        print("{} {}".format(color, clothes_type))
