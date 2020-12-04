@@ -1,4 +1,17 @@
-#**String Reference Cheat Sheet**
+# Google Course Cheat Sheet
+
+## Arithmetic Operations
+###### Python can operate with numbers using the usual mathematical operators, and some special operators, too. These are all of them (we'll explore the last two in later videos).
+
+- a + b = Adds a and b
+- a - b = Subtracts b from a
+- a * b = Multiplies a and b
+- a / b = Divides a by b
+- a ** b = Elevates a to the power of b. For non integer values of b, this becomes a root (i.e. a**(1/2) is the square root of a)
+- a // b = The integer part of the integer division of a by b
+- a % b = The remainder part of the integer division of a by b
+
+##**String Reference Cheat Sheet**
 ###### In Python, there are a lot of things you can do with strings. In this cheat sheet, you’ll find the most common string operations and string methods.
 
 ###String operations
@@ -24,7 +37,7 @@ _Check out the official documentation for all available [String methods](https:/
 
 
 
-# Formatting Strings Cheat Sheet
+## Formatting Strings Cheat Sheet
 ###### Python offers different ways to format strings. In the video, we explained the format() method. In this reading, we'll highlight three different ways of formatting strings. For this course you only need to know the format() method. But on the internet, you might find any of the three, so it's a good idea to know that the others exist.
 
 Using the format() method
@@ -152,7 +165,7 @@ Item: Purple Cup - Amount: 5 - Price: 16.25
  
  
 
-# Lists and Tuples Operations Cheat Sheet
+## Lists and Tuples Operations Cheat Sheet
 ###### Lists and tuples are both sequences, so they share a number of sequence operations. But, because lists are mutable, there are also a number of methods specific just to lists. This cheat sheet gives you a run down of the common operations first, and the list-specific operations second.
 
 ### Common sequence operations
