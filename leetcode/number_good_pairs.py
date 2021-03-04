@@ -23,16 +23,20 @@ class Solution(object):
     def numIdenticalPairs(self, nums):
         """
         Unfinished
+        Solution from leetcode
         :type nums: List[int]
         :rtype: int
         """
-        count=1
-        num_pairs = []
-        for i in range(len(nums)):
-            for x in nums:
-                if nums[i] == x:
-                    num_pairs.append(x)
-            # p = [x for x in nums if nummm == x]
+        cnt=0
+        for i in range(0,len(nums)):
+            print("i", i)
+            for j in range(i+1,len(nums)):
+                print("j", j)
+                print("nums[i]", nums[i])
+                print("nums[j]", nums[j])
+                if nums[i]==nums[j]:
+                    cnt+=1
+        return cnt
 p = Solution()
-print(p.numIdenticalPairs([1,2,3,1,1,3])) # 4
+# print(p.numIdenticalPairs([1,2,3,1,1,3])) # 4
 print(p.numIdenticalPairs([1,1,1,1])) # 6
