@@ -9,14 +9,15 @@ Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 """
 class Solution:
     def runningSum(self,nums):
-        pp = []
-        temp = ''
-        for x in range(len(nums)+1):
-            pp.append(nums[x])
-            print("pp", pp)
-            if len(pp) == x:
-                print(len(pp) == x)
-                pass
+        """
+        My solution
+        """
+        runningsum = []
+        temp = 0
+        for x in range(0, len(nums)):
+            temp += nums[x]
+            runningsum.append(temp)
+        return runningsum
 
 
 p = Solution()
