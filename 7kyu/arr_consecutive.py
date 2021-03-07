@@ -22,6 +22,6 @@ def consecutive(arr):
     return max(arr) - min(arr) + 1 - len(arr) if arr else 0
 
 
-
+8 - 4 = 4 + 1 = 5 - 3 = 2
 consecutive([4, 8, 6])  # 2
 # consecutive([]) #0
