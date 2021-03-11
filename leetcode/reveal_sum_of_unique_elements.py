@@ -21,19 +21,19 @@ Explanation: The unique elements are [1,2,3,4,5], and the sum is 15.
 
 
 class Solution:
+    """ Solution from other leet coders"""
     def sumOfUnique(self, nums):
-        unique = []
+        counter = 0
         for i in nums:
-            if i not in unique:
-                unique.append(i)
-                print("uniq", unique)
-            else:
-                print("duplicate ", i)
-                unique.remove(i)
-        print(unique)
-        # return sum[unique]
+            counting = nums.count(i)
+            print("Couting", counting)
+            if counting == 1:
+                print("{} == 1".format(i))
+                counter += i
+        return counter
+
 
 p = Solution()
 # print(p.smallerNumbersThanCurrent([6,5,4,8])) #  [2,1,0,3]
 print(p.sumOfUnique([1,2,3,2]))  #4
-print(p.sumOfUnique([1,1,1,1,1]))  #0
+# print(p.sumOfUnique([1,1,1,1,1]))  #0
