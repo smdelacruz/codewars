@@ -25,20 +25,23 @@ Explanation: It is better not to apply any change.
 
 
 class Solution:
-    def maximum69Number(self, num):
-        max = num
-        num = str(num)
+    def maximum69Number(self, n):
+        max = n
+        num = str(n)
 
         for digit in range(len(num)):
             print("digit", digit)
             print("num[digit]", num[digit])
             if num[digit] == "6":
                 print("if")
-                num[digit].replace("6", "9")
+                newdigit = num[digit].replace("6", "9")
             else:
                 print("else")
-                num[digit].replace("9", "6")
-            print("new num", num)
+                print("b4 ", num[digit])
+                newdigit = num[digit].replace("9", "6")
+                print("after ", newdigit)
+            num = newdigit
+            print("new num",num)
             max = max if max >= int(num) else int(num)
             print("max", max)
             num = num
@@ -47,5 +50,5 @@ class Solution:
         return max
 
 p = Solution()
-print(p.maximum69Number(9999))
+print(p.maximum69Number(9))
 # print(p.maximum69Number(9996))
