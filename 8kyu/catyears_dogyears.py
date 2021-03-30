@@ -20,20 +20,26 @@ def human_years_cat_years_dog_years(human_years):
     """
     my solution
     """
-    cat_years = 0
-    dog_years = 0
-    if human_years == 1:
-        cat_years = 15
-        dog_years = 15
-    elif human_years == 2:
-        cat_years = 15 + 9
-        dog_years = 15 + 9
-    elif human_years > 3:
+    cat_years = 15
+    dog_years = 15
+    if human_years >= 2:
+        cat_years += 9
+        dog_years += 9
+    if human_years >= 3:
         multiplier = human_years - 2
-        cat_years = (15 + 9) + (multiplier * 4)
-        dog_years = (15 + 9) + (multiplier * 5)
+        cat_years += (multiplier * 4)
+        dog_years += (multiplier * 5)
     return [human_years,cat_years,dog_years]
 
 
+def human_years_cat_years_dog_years(n):
+    """
+    Clever solution
+    """
+    cat_years = 15 + (9 * (n > 1)) + (4 * (n - 2) * (n > 2))
+    dog_years = 15 + (9 * (n > 1)) + (5 * (n - 2) * (n > 2))
+    return [n, cat_years, dog_years]
+
 print(human_years_cat_years_dog_years(1))
 print(human_years_cat_years_dog_years(2))
+print(human_years_cat_years_dog_years(3)) #[3, 28, 29]
