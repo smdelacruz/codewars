@@ -26,7 +26,6 @@ def mygcd(x, y):
 #Try to make your own gcd method without importing stuff
 def mygcd(x,y):
     """Best Practice solution by other code wars"""
-    #GOOD LUCK
     while y:
         x,y=y,x%y
     return x
