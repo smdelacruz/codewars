@@ -1,4 +1,5 @@
 """
+Unsolved
 Take an integer n (n >= 0) and a digit d (0 <= d <= 9) as an integer.
 
 Square all numbers k (0 <= k <= n) between 0 and n.
@@ -20,22 +21,19 @@ Note that 121 has twice the digit 1.
 """
 
 def nb_dig(n, d):
-    maa = lambda a : a**2
-    # counter = 1
-    # for x in range(n):
-    #     if "1" in str(maa(x)):
-    #         print(maa(x))
-    #         counter += 1
-    #     else: pass
-    # return counter
-
-    return [x for x in range(n) if "1" in str(maa(x))].count("1")
+    """
+    Best practices in Kata
+    """
+    for i in range(n+1):
+        pp = str(i * i).count(str(d))
+        print(pp)
+    return sum(pp)
+    # return sum(str(i*i).count(str(d)) for i in range(n+1))
 
 
-
-print(nb_dig(25, 1))# 11)
-print(nb_dig(10, 1))# 11)
+# print(nb_dig(25, 1))# 11)
+# print(nb_dig(10, 1))# 11)
 # print(nb_dig(5750, 0))# 4700)
 # print(nb_dig(11011, 2))#, 9481)
 # print(nb_dig(12224, 8))#, 7733)
-# print(nb_dig(11549, 1))#, 11905)
+print(nb_dig(11549, 1))#, 11905)
