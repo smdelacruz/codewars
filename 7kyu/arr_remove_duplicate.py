@@ -23,12 +23,12 @@ def sum_no_duplicates(l):
 
 
 
-# def sum_no_duplicates(l):
-#     """
-#     Best solution by other code warriors
-#     """
+def sum_no_duplicates(l):
+    """
+    Best solution by other code warriors
+    """
 
-#     return sum(n for n in set(l) if l.count(n) == 1)
+    return sum(n for n in set(l) if l.count(n) == 1)
 
 
 # print(sum_no_duplicates([1, 1, 2, 3]))#  5)
