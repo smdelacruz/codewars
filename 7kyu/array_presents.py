@@ -16,11 +16,20 @@ def presents(lst):
     """
     My solution
     """
-    p = []
-    for i, v in enumerate(lst, start=1):
-        print("index[{}] = value [{}]".format(i, v))
-        p[v] = v
-    print(p)
+    temp = {}
+    for idx, val in enumerate(lst, start=1):
+        temp[val] = idx
+    items = temp.items()
+    return [dval for dkey, dval in sorted(items)]
+
+
+def presents(a):
+    """Simplest solution"""
+    return [a.index(i)+1 for i in sorted(a)]
+
+    
+print(presents([2, 3, 4, 1]))
+print(presents([2, 3, 4, 1]))
 print(presents([2, 3, 4, 1]))
 # class TestMygcd(unittest.TestCase):
 #     def test_results(self):
