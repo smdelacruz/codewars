@@ -9,7 +9,10 @@ The friend 1 gave gift to the friend 2 (a[1] == 2) - this means that in the outp
 The friend 2 gave gift to the friend 3 (a[2] == 3) - this means that in the output array number 2 is at position 3 : [_, 1, 2, _].
 The friend 3 gave gift to the friend 4 (a[3] == 4) - this means that in the output array number 3 is at position 4 : [_, 1, 2, 3].
 The friend 4 gave gift to the friend 1 (a[4] == 1) - this means that in the output array number 4 is at position 1 : [4, 1, 2, 3].
+tes here
 """
+
+
 import unittest
 
 def presents(lst):
@@ -27,7 +30,7 @@ def presents(a):
     """Simplest solution"""
     return [a.index(i)+1 for i in sorted(a)]
 
-    
+
 print(presents([2, 3, 4, 1]))
 print(presents([2, 3, 4, 1]))
 print(presents([2, 3, 4, 1]))
