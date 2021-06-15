@@ -6,12 +6,16 @@ x need to be Unique number
 like [0, 1, 2, 4]
 """
 
+def unique(arr):
+    len_arr = len(arr)
+    p  = list(set(arr))
+    max_num = max(p)
+    for i in range(len(p),len_arr):
+        max_num += 1
+        if max_num not in p:
+            p.append(max_num)
+            max_num += 1
+    return p
+print(unique([0, 0, 1, 1]))
+print(unique([-1, -2, -3, -4]))
 
-
-bf1ce8c7-9ca1-eb11-810b-00155d121034
-
-0973188042
-
-
-
-rma - 5adb1296-83a1-eb11-810b-00155d121034
