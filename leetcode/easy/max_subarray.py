@@ -10,14 +10,18 @@ class Solution:
         #previous = -1
         # i = -3
         #sum_counter = -2 + 1 = -1
-        max_list = []
-        previous = nums[0]
+        highest = nums[0]
         sum_counter = 0
         for i in nums[1:]:
-            print("current data", i)
             if sum_counter < 0:
-                sum_counter = previous + i
-                previous = sum_counter
-            else: pass
+                sum_counter = 0
+            sum_counter += i
+            print("n=, ", i)
+            print("sum_counter, ", sum_counter)
+            highest = max(sum_counter, highest)
+        return highest
 
+p = Solution()
+print(p.maxSubArray([-2,1,-3,4,-1,2,1,-5,4])) #5
+print(p.maxSubArray([-2])) #5
 

@@ -114,15 +114,15 @@ class Linkedlist:
             currentNode = currentNode.next
 
 
-firstNode = Node("Me")
+firstNode = Node(1)
 linkedList = Linkedlist()
 linkedList.insertToEndList(firstNode) #Me
-secondNode = Node("coffee")
+secondNode = Node(2)
 linkedList.insertToEndList(secondNode) #coffee
-thirdNode = Node("laptop")
-linkedList.insertToHeadList(thirdNode) #laptop
-fourthNode = Node("keyboard")
-linkedList.insertAtPosition(fourthNode, 0)
+thirdNode = Node(3)
+linkedList.insertToEndList(thirdNode) #laptop
+fourthNode = Node(4)
+linkedList.insertToEndList(fourthNode)
 # # linkedList.deleteEndofList()
 # # forEndNode = Node("add at the end")
 # # linkedList.insertToEndList(forEndNode)
@@ -132,8 +132,8 @@ linkedList.insertAtPosition(fourthNode, 0)
 # fourthNode = Node("keyboard")
 # linkedList.insertAtPosition(fourthNode, 0)
 # linkedList.deleteAtPosition(10)
-linkedList.deleteHeadofList()
-linkedList.deleteHeadofList()
-linkedList.deleteEndofList()
+# linkedList.deleteHeadofList()
+# linkedList.deleteHeadofList()
+# linkedList.deleteEndofList()
 # print(linkedList.isListEmpty())
-# linkedList.printList()
+linkedList.printList()
